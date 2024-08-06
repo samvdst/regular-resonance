@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+---
+
+<Layout title="Rafael Garcia">
+  <main>
+    <Navigation />
+    <div
+      class="flex h-screen w-screen flex-col items-center justify-center object-cover"
+    >
+      <!-- video background -->
+      <video
+        autoplay
+        loop
+        muted
+        class="absolute z-10 min-h-full min-w-full object-cover"
+      >
+        <source
+          src="https://pub-72a1e46318194326b09d8d7e598a9615.r2.dev/spaceengine%20fertig.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <!-- optional to darken video! -->
+      <!-- <div class="bg-black absolute inset-0 z-20 opacity-50"></div> -->
+      <h1
+        class="fade-out z-30 text-7xl font-bold uppercase tracking-wide text-white"
+      >
+        Welcome to Garcis World
+      </h1>
+    </div>
+    <div
+      class="flex h-screen w-screen flex-col items-center space-y-8 bg-zinc-50 py-32"
+    >
+      <h2 class="font-mono text-4xl font-bold uppercase tracking-wider">
+        An epic title
+      </h2>
+      <p class="max-w-2xl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum minima
+        nisi optio officiis quia nostrum minus velit cumque delectus, debitis
+        doloremque reprehenderit mollitia modi. Expedita fugit praesentium nihil
+        aut autem.
+      </p>
+    </div>
+  </main>
+</Layout>

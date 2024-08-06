@@ -1,0 +1,28 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Rafael Garcia | About">
+  <main>
+    <Navigation />
+    <div class="flex h-screen w-screen items-center justify-center bg-zinc-400">
+      <h1 class="text-7xl font-bold uppercase tracking-wide text-white">
+        About me
+      </h1>
+    </div>
+    <div
+      class="flex h-screen w-screen flex-col items-center space-y-8 bg-zinc-50 py-32"
+    >
+      <h2 class="font-mono text-4xl font-bold uppercase tracking-wider">
+        An epic title
+      </h2>
+      <p class="max-w-2xl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum minima
+        nisi optio officiis quia nostrum minus velit cumque delectus, debitis
+        doloremque reprehenderit mollitia modi. Expedita fugit praesentium nihil
+        aut autem.
+      </p>
+    </div>
+  </main>
+</Layout>
